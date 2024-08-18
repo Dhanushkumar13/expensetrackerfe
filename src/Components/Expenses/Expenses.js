@@ -4,7 +4,6 @@ import { InnerLayout } from '../../Styles/Layout';
 import { useGlobalContext } from '../../Context/GlobalContext';
 import Form from './ExpenseForm';
 import Item from '../Item/Item';
-import Filter from '../Item/Filter';
 
 export default function Dashboard() {
     
@@ -24,7 +23,6 @@ export default function Dashboard() {
                         <Form/>
                     </div>
                     <div className='expenses'>
-                        <Filter/>
                         {expenses.map((expense)=>{
                             const {_id, amount, date, category, description, type} = expense;
                             return <Item
