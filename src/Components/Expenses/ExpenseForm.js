@@ -7,6 +7,7 @@ import Button from '../Button/Button';
 import { plus } from '../../Utilities/Icons';
 
 
+
 function ExpenseForm() {
     const {addExpense, error, setError} = useGlobalContext()
     const [customCategory, setCustomCategory] = useState('');

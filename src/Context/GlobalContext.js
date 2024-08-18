@@ -2,7 +2,7 @@ import { createContext, useContext, useState } from "react";
 import axios from 'axios';
 
 // Backend URL
-const BASE_URL = "http://localhost:5000/api/";
+const BASE_URL = "https://expensetracker-be-i3d0.onrender.com/api/";
 
 const GlobalContext = createContext();
 

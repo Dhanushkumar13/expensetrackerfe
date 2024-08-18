@@ -1,7 +1,8 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect} from 'react'
 import { useGlobalContext } from '../../Context/GlobalContext'
 import styled from 'styled-components';
 import { dateFormat } from '../../Utilities/dateFormat';
+
 
 export default function Filter() {
     const {expenses} = useGlobalContext();
@@ -79,7 +80,6 @@ export default function Filter() {
     </ExpenseListStyled>
   )
 }
-
 
 const ExpenseListStyled = styled.div`
     .filters {
